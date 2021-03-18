@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<style type="text/css">
+		.container { 
+			max-width: 800px; 
+			padding: 20px;
+		}
+		.btn-primary {
+			width: 10%;
+		}
+		.btn:focus {
+		  outline: none;
+		  box-shadow: none;
+		}
+		.timer-badge {
+		    font-size: 1.2em;
+		    float: right;
+		}
+	</style>
+
+	<title>SDMT</title>
+</head>
+<body>
+	<div class="container" id="timer" style="max-width: 900px; margin-bottom: 30px;">
+		<button type="button" class="btn btn-outline-primary timer-badge disabled">
+			<span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+		</button>
+	</div>
+
+	<div class="container" style="max-width: 800px">
+	  	<table id="key" class="table table-bordered text-center">
+  			<thead>
+  				<tr>
+  					<th scope="col" id="key-1"></th>
+			      	<th scope="col" id="key-2"></th>
+			      	<th scope="col" id="key-3"></th>
+			      	<th scope="col" id="key-4"></th>
+			      	<th scope="col" id="key-5"></th>
+			      	<th scope="col" id="key-6"></th>
+			      	<th scope="col" id="key-7"></th>
+			      	<th scope="col" id="key-8"></th>
+			      	<th scope="col" id="key-9"></th>  				  	
+  				</tr>
+		 	</thead>
+		  	<tbody>
+		  		<tr>
+  				  	<th>1</th>
+			      	<th>2</th>
+			      	<th>3</th>
+			      	<th>4</th>
+			      	<th>5</th>
+			      	<th>6</th>
+			      	<th>7</th>
+			      	<th>8</th>
+			      	<th>9</th>
+  				</tr>
+		  	</tbody>			
+		</table>
+	</div>
+
+	<div class="container" id="input-field" style="max-width: 900px">
+		<table id="tbl-input-1" class="table table-bordered text-center">
+			<thead>
+  				<tr>
+  				  	<th scope="col" id="lbl-1"></th>
+			      	<th scope="col" id="lbl-2"></th>
+			      	<th scope="col" id="lbl-3"></th>
+			      	<th scope="col" id="lbl-4"></th>
+			      	<th scope="col" id="lbl-5"></th>
+			      	<th scope="col" id="lbl-6"></th>
+			      	<th scope="col" id="lbl-7"></th>
+			      	<th scope="col" id="lbl-8"></th>
+			      	<th scope="col" id="lbl-9"></th>
+			      	<th scope="col" id="lbl-10"></th>
+			      	<th scope="col" id="lbl-11"></th>
+			      	<th scope="col" id="lbl-12"></th>
+			      	<th scope="col" id="lbl-13"></th>
+			      	<th scope="col" id="lbl-14"></th>
+			      	<th scope="col" id="lbl-15"></th>
+  				</tr>
+		 	</thead>
+		 	<tbody>
+		 		<tr>
+		 			<td><input type="text" class="form-control" id="inp1"></td>
+		 			<td><input type="text" class="form-control" id="inp2"></td>
+		 			<td><input type="text" class="form-control" id="inp3"></td>
+		 			<td><input type="text" class="form-control" id="inp4"></td>
+		 			<td><input type="text" class="form-control" id="inp5"></td>
+		 			<td><input type="text" class="form-control" id="inp6"></td>
+		 			<td><input type="text" class="form-control" id="inp7"></td>
+		 			<td><input type="text" class="form-control" id="inp8"></td>
+		 			<td><input type="text" class="form-control" id="inp9"></td>
+		 			<td><input type="text" class="form-control" id="inp10"></td>
+		 			<td><input type="text" class="form-control" id="inp11"></td>
+		 			<td><input type="text" class="form-control" id="inp12"></td>
+		 			<td><input type="text" class="form-control" id="inp13"></td>
+		 			<td><input type="text" class="form-control" id="inp14"></td>
+		 			<td><input type="text" class="form-control" id="inp15"></td>
+		 		</tr>
+		 	</tbody>
+		</table>
+		<table id="tbl-input-2" class="table table-bordered text-center">
+			<thead>
+  				<tr>
+  				  	<th scope="col" id="lbl-16"></th>
+			      	<th scope="col" id="lbl-17"></th>
+			      	<th scope="col" id="lbl-18"></th>
+			      	<th scope="col" id="lbl-19"></th>
+			      	<th scope="col" id="lbl-20"></th>
+			      	<th scope="col" id="lbl-21"></th>
+			      	<th scope="col" id="lbl-22"></th>
+			      	<th scope="col" id="lbl-23"></th>
+			      	<th scope="col" id="lbl-24"></th>
+			      	<th scope="col" id="lbl-25"></th>
+			      	<th scope="col" id="lbl-26"></th>
+			      	<th scope="col" id="lbl-27"></th>
+			      	<th scope="col" id="lbl-28"></th>
+			      	<th scope="col" id="lbl-29"></th>
+			      	<th scope="col" id="lbl-30"></th>
+  				</tr>
+		 	</thead>
+		 	<tbody>
+		 		<tr>
+		 			<td><input type="text" class="form-control" id="inp16"></td>
+		 			<td><input type="text" class="form-control" id="inp17"></td>
+		 			<td><input type="text" class="form-control" id="inp18"></td>
+		 			<td><input type="text" class="form-control" id="inp19"></td>
+		 			<td><input type="text" class="form-control" id="inp20"></td>
+		 			<td><input type="text" class="form-control" id="inp21"></td>
+		 			<td><input type="text" class="form-control" id="inp22"></td>
+		 			<td><input type="text" class="form-control" id="inp23"></td>
+		 			<td><input type="text" class="form-control" id="inp24"></td>
+		 			<td><input type="text" class="form-control" id="inp25"></td>
+		 			<td><input type="text" class="form-control" id="inp26"></td>
+		 			<td><input type="text" class="form-control" id="inp27"></td>
+		 			<td><input type="text" class="form-control" id="inp28"></td>
+		 			<td><input type="text" class="form-control" id="inp29"></td>
+		 			<td><input type="text" class="form-control" id="inp30"></td>
+		 		</tr>
+		 	</tbody>
+		</table>
+		<table id="tbl-input-3" class="table table-bordered text-center">
+			<thead>
+  				<tr>
+  				  	<th scope="col" id="lbl-31"></th>
+			      	<th scope="col" id="lbl-32"></th>
+			      	<th scope="col" id="lbl-33"></th>
+			      	<th scope="col" id="lbl-34"></th>
+			      	<th scope="col" id="lbl-35"></th>
+			      	<th scope="col" id="lbl-36"></th>
+			      	<th scope="col" id="lbl-37"></th>
+			      	<th scope="col" id="lbl-38"></th>
+			      	<th scope="col" id="lbl-39"></th>
+			      	<th scope="col" id="lbl-40"></th>
+			      	<th scope="col" id="lbl-41"></th>
+			      	<th scope="col" id="lbl-42"></th>
+			      	<th scope="col" id="lbl-43"></th>
+			      	<th scope="col" id="lbl-44"></th>
+			      	<th scope="col" id="lbl-45"></th>
+  				</tr>
+		 	</thead>
+		 	<tbody>
+		 		<tr>
+		 			<td><input type="text" class="form-control" id="inp31"></td>
+		 			<td><input type="text" class="form-control" id="inp32"></td>
+		 			<td><input type="text" class="form-control" id="inp33"></td>
+		 			<td><input type="text" class="form-control" id="inp34"></td>
+		 			<td><input type="text" class="form-control" id="inp35"></td>
+		 			<td><input type="text" class="form-control" id="inp36"></td>
+		 			<td><input type="text" class="form-control" id="inp37"></td>
+		 			<td><input type="text" class="form-control" id="inp38"></td>
+		 			<td><input type="text" class="form-control" id="inp39"></td>
+		 			<td><input type="text" class="form-control" id="inp40"></td>
+		 			<td><input type="text" class="form-control" id="inp41"></td>
+		 			<td><input type="text" class="form-control" id="inp42"></td>
+		 			<td><input type="text" class="form-control" id="inp43"></td>
+		 			<td><input type="text" class="form-control" id="inp44"></td>
+		 			<td><input type="text" class="form-control" id="inp45"></td>
+		 		</tr>
+		 	</tbody>
+		</table>
+	</div>
+
+	<div class="container text-center" id="buttons" style="max-width: 800px">
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('1')">1</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('2')">2</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('3')">3</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('4')">4</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('5')">5</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('6')">6</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('7')">7</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('8')">8</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="addValue('9')">9</button>
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	// disable keyboard input
+	$(".form-control").keydown(function(event) { 
+	    return false;
+	});
+	var symbols = {
+		'1': '&#8805;',
+		'2': '&#0177;',
+		'3': '<span style="font-size:22px;">&#0171;</span>',
+		'4': '&#960;',
+		'5': '<span style="font-size:14px;">&#1046;</span>',
+		'6': '<span style="font-size:14px;">&#936;</span>',
+		'7': '<span style="font-size:14px;">&#916;</span>',
+		'8': '<span style="font-size:14px;">&#927;</span>',
+		'9': '&#x2191;'
+	};
+
+	var fc = 1,
+		maxInp = 45;
+
+	// randomize symbols for input table
+	for (var r=1; r<=maxInp; r++) {
+		var rnd = Math.floor(Math.random() * 9) + 1;
+		$('#lbl-'+r).html(symbols[rnd]);
+	}
+	setFocus(fc);
+
+	// pipe symbols into key table
+	for (var key=1; key<=9; key++) {
+		$('#key-'+key).html(symbols[key]);
+	}
+
+	// timer set up
+	var h = 0,
+		m = 0,
+		s = 0,
+		ms = 0,
+		cron;
+
+	function startTimer() {
+		stopTimer();
+		cron = setInterval(function(){ timer(); }, 10);
+
+	}
+	function stopTimer() {
+		clearInterval(cron);
+	}
+	function timer() {
+		if((ms += 10) == 1000) {
+			ms = 0;
+			s++;
+		}
+		if(s == 60){
+			s = 0;
+			m++;
+		}
+		if(m == 60) {
+			m = 0;
+			h++;
+		}
+		$('#hour').text(getData(h));
+		$('#minute').text(getData(m));
+		$('#second').text(getData(s));
+	}
+	function getData(num) {
+		return num > 10 ? num : '0'+num;
+	}
+
+	startTimer();
+	// -- end timer set up
+
+	
+	// set focus for input fields
+	function setFocus(id) {
+		var table = Math.ceil(fc / 15);
+		$('table[id*="tbl-input"]').each(function(){
+			if ($(this).attr('id') != 'tbl-input-'+table) {
+				$(this).hide();
+			} else {
+				$(this).show();
+			}
+		});
+		$('#inp'+id).focus();
+	}
+
+	// input values on button press
+	function addValue(v) {
+		$('#inp'+fc).val(v);
+		if(fc < maxInp) {
+			fc++;
+			setFocus(fc);
+		}else {
+			stopTimer();
+		}
+	}
+</script>
+</body>
+</html>
